@@ -19,7 +19,7 @@ const githubError =  document.getElementsByClassName('invalid-msg' )[2];
 
 // Expressões regulares
 const emailRegex = /^[^\s@]+@[^\s@]+\.[A-Za-z]{2,63}$/;
-const githubRegex = /@(?!-)(?!.*--)([a-zA-Z0-9-]{1,39}(?<!-))/g;
+const githubRegex = /^@([a-z\d](?:[a-z\d]|-(?=[a-z\d])){0,38})$/i;
 
 
 // Função para validar email
