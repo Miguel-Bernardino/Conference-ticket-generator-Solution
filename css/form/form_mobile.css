@@ -1,0 +1,58 @@
+@media (max-width: 480px) {
+
+    .input-border {
+
+        height: clamp(1rem, 3.5rem, 10rem);
+
+    }
+
+    .main-page-txt{
+        width: 90%;
+    }
+
+    .main-page-txt h1 {
+        width: 100%;
+        font-size: clamp(1rem, 1.8rem, 3rem);
+    }
+
+    .main-page-txt p {
+        width: 90%;
+        font-size: clamp(0.7rem, 1rem, 1.4rem);
+    }
+    
+    label {  
+        font-size: 1.2rem;   
+    }
+
+    .input-border-file{
+        height: clamp(1rem, 10rem, 100rem);  
+    }
+
+    .drag-area{
+
+        width: 92.5%;
+        height: 8rem;
+        padding: 0.7rem;
+
+    }
+
+    input::placeholder{
+    
+        font-size: clamp(0.7rem, 1rem, 2rem);
+
+    }
+
+    #info-txt{
+
+        font-size: 0.75rem;
+
+    }
+
+    #submit-button {
+
+        font-size: 1.4rem;
+
+    }
+    
+
+}
