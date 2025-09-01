@@ -1,0 +1,138 @@
+@font-face {
+
+    font-family: Inconsolata;
+    src: url("../assets/fonts/Inconsolata-VariableFont_wdth\,wght.ttf");
+
+}
+
+@font-face {
+
+    font-family: Inconsolata-Bold;
+    src: url("../assets/fonts/static/Inconsolata-Bold.ttf")
+
+}
+
+@font-face {
+
+    font-family: Inconsolata-ExtraBold;
+    src: url("../assets/fonts/static/Inconsolata-ExtraBold.ttf");
+
+}
+
+@font-face {
+
+    font-family: Inconsolata-Medium;
+    src: url("../assets/fonts/static/Inconsolata-Medium.ttf");
+
+}
+
+@font-face {
+
+    font-family: Inconsolata-Regular;
+    src: url("../assets/fonts/static/Inconsolata-Regular.ttf");
+
+}
+
+header {
+    
+    margin-top: 4vh;
+    margin-bottom: 4.82vh;/*6.82 antigo*/
+
+    display: flex;
+    justify-content: center;
+
+}
+
+header img{
+    width: 200px;
+}
+
+
+body {
+
+    background-image: 
+    url("../assets/images/pattern-lines.svg"), 
+    url("../assets/images/pattern-squiggly-line-top.svg"), 
+    url("../assets/images/pattern-squiggly-line-bottom-desktop.svg"),
+    url("../assets/images/pattern-circle.svg"),
+    url("../assets/images/pattern-circle.svg"),
+    url("../assets/images/background-desktop.png");
+
+    background-size: 140vh, 30%, 50%, 15vw, 15vw, 100% 100%;
+    background-repeat: repeat-x, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+    background-position-x: 45px, 70vw, left, 4.5vw, 65vw, right;
+    background-position-y: 0px,  7vh, bottom, -7vh, 45.5vh, top;
+    background-attachment: fixed, fixed, fixed, fixed, fixed, fixed;
+    
+}
+
+/*Celular*/
+@media (max-width: 450px){
+
+    #logo {
+        height: 2.51vh;
+        width: 45vw;
+    }
+
+    body {
+        background-image: 
+        url("../assets/images/pattern-lines.svg"), 
+        url("../assets/images/pattern-squiggly-line-top.svg"), 
+        url("../assets/images/pattern-squiggly-line-bottom-mobile-tablet.svg"),
+        url("../assets/images/pattern-circle.svg"),
+        url("../assets/images/pattern-circle.svg"),
+        url("../assets/images/background-mobile.png");
+        
+        background-size: 100vh, 30%, 50%, 30vw, 30vw, 100% 100%;
+        background-repeat: repeat-x, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+        background-position-x: 0px, 70vw, left, -5vw, 80vw, right;
+        background-position-y: 0px,  2vh, bottom, -4vh, 50vh, top;
+        background-attachment: fixed, fixed, fixed, fixed, fixed, fixed;
+    }
+}
+
+/*Tablet*/
+@media (min-width: 540px) and (max-width: 768px){
+    #logo {
+        height: 5vh;
+        width: 35vw;
+    }
+    body {
+        background-image: 
+        url("../assets/images/pattern-lines.svg"), 
+        url("../assets/images/pattern-squiggly-line-top.svg"), 
+        url("../assets/images/pattern-squiggly-line-bottom-mobile-tablet.svg"),
+        url("../assets/images/pattern-circle.svg"),
+        url("../assets/images/pattern-circle.svg"),
+        url("../assets/images/background-tablet.png");
+        
+        background-size: 100vh, 30%, 50%, 30vw, 30vw, 100% 100%;
+        background-repeat: repeat-x, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+        background-position-x: 0vw, 70vw, left -5vw, 80vw, right;
+        background-position-y: 0px,  2vh, bottom, -4vh, 50vh, top;
+        background-attachment: fixed, fixed, fixed, fixed, fixed, fixed;
+    }  
+}
+
+/*Orientacao Horizontal*/
+@media (orientation: landscape) and (max-width: 1023px) {
+    #logo {
+        height: 4.5vh;
+        width: 20vw;
+    }
+    body {
+        background-image: 
+        url("../assets/images/pattern-lines.svg"), 
+        url("../assets/images/pattern-squiggly-line-top.svg"), 
+        url("../assets/images/pattern-squiggly-line-bottom-mobile-tablet.svg"),
+        url("../assets/images/pattern-circle.svg"),
+        url("../assets/images/pattern-circle.svg"),
+        url("../assets/images/background-mobile.png");
+        
+        background-size: 100vh, 30%, 50%, 30vw, 30vw, 100% 100%;
+        background-repeat: repeat-x, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+        background-position-x: 0px, 70vw, left, -5vw, 80vw, right;
+        background-position-y: 0px,  2vh, bottom, -4vh, 50vh, top;
+        background-attachment: fixed, fixed, fixed, fixed, fixed, fixed;
+    }
+}
